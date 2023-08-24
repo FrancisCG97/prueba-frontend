@@ -1,42 +1,37 @@
 /* --------- ROOT --------- */
-
-:root {
+:root,
+body {
   width: 100vw;
 }
 
-.row {
+.row,
+body {
   margin: 0%;
   padding: 0%;
+}
+
+.row {
   display: flex;
   align-content: center;
 }
 
 body {
   background-color: #334f53;
-  width: 100vw;
-  padding: 0%;
-  margin: 0%;
 }
 
 
 /* --------- HOME --------- */
-
 /* --------- HEADER --------- */
 p {
   color: #00b0c8;
   font-family: 'Creepster', cursive;
-  font-size: 300%;
+  font-size: 250%;
   margin: 0%;
 }
 
 #header-container {
-  width: 100vw;
+  width: 100%;
   padding: 3% 0%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 #columns {
@@ -44,13 +39,17 @@ p {
 }
 
 #logo {
-  width: 30%;
-  height: fit-content;
+  width: 50%;
 }
 
 #return-home {
   background-color: transparent;
-
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -78,14 +77,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
 /* --------- CARDS --------- */
 .card-img {
   border-radius: 20px 20px;
@@ -95,12 +86,8 @@ p {
   margin-top: 10%;
 }
 
-#info-cards {
-  width: 100vw;
-  height: fit-content;
-  padding: 0%;
-  margin: 3% 0%;
-  background-color: transparent;
+#info-cards,
+#info-results  {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -108,17 +95,28 @@ p {
   align-items: center;
 }
 
+#info-cards {
+width: 100vw;
+height: fit-content;
+padding: 0%;
+margin: 3% 0%;
+background-color: transparent;
+}
+
 #info-results {
   padding: 3%;
   background-color: #9acc77;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
   border-radius: 15px;
 }
 
+#more-information {
+  border-color: #334f53;
+  box-shadow: #334f53 2px 2px 1px 2px;
+
+}
+
 #info-body {
+  margin-top: 4px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -127,7 +125,19 @@ p {
 
 
 /* --------- MODAL --------- */
-#staticBackdrop {
-  background-color: #e5ead4;
+.modal {
+  background-color: transparent;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: large;
+}
+
+#close-btn {
+  background-color: #45936c;
+  border-color: transparent;
 }
 

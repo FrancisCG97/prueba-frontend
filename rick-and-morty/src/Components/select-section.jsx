@@ -1,11 +1,26 @@
+/* eslint-disable no-unused-vars */
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import axios from "axios";
+import { useState } from "react";
 
 
 
 function SelectSection() {
 
-    //Función de filtrado
+    const [status, setStatus] = useState("");
+
+    //Función de filtrado por status
+    axios.get( 
+        'https://rickandmortyapi.com/api/character/?name=rick&status=alive'
+    )
+        .then(function (response) {
+            setStatus(response.data.results);
+        })
+        .catch(function (error) {
+            console.error(error);
+        });
+
 
     return (
         <>
