@@ -19,9 +19,9 @@ function Header() {
                 <div id="columns" className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div id="header-container" className="container-fluid">
                         <button id="return-home" className="btn" onClick={goHome}>
-                            <p> The </p>
+                            <p> The  
                             <img src="./src/Images/logo.png" alt="Logo" id="logo" className="align-text-top"></img>
-                            <p> characters page! </p>
+                             characters page! </p>
                         </button>
                     </div>
                 </div>
